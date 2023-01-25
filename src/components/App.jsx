@@ -36,7 +36,7 @@ export class App extends Component {
 }
 
   componentDidMount = () => {
-    const contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+    const contacts = JSON.parse(localStorage.getItem("contacts")) || this.state.contacts;
     
     this.setState(() => ({contacts}))
   }
@@ -91,5 +91,3 @@ export class App extends Component {
 }
 
 }
-
-const x = 0;
