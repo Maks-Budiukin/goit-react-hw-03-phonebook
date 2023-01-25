@@ -92,3 +92,4 @@ export class App extends Component {
 
 }
 
+const x = 0;
